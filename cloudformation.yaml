@@ -374,7 +374,7 @@ Resources:
       ServiceName: !Sub ${EnvironmentName}-service
       Cluster: !Ref ECSCluster
       TaskDefinition: !Ref ECSTaskDefinition
-      DesiredCount: !Ref DesiredCount
+      DesiredCount: 0
       LaunchType: FARGATE
       NetworkConfiguration:
         AwsvpcConfiguration:
